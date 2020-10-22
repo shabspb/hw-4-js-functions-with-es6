@@ -50,6 +50,21 @@ const stringExpansion = (str) => {
     }
     return strExp;
 };
+// 'for ... of' instead of 'for'
+/* const stringExpansion = (str) => {
+    let strExp = '';
+    str = str.split('')
+    for (const [i, value] of str.entries()) {   
+        if (!isNaN(value)) {
+            for (let j = 1; j < value; j++) {
+                if (isNaN(str[i + 1])) strExp += str[i + 1];
+            }
+        } else {
+            strExp += str[i];
+        }
+   }
+    return strExp;
+}; */
 
 console.log(stringExpansion('3D2a5d2f')); // === 'DDDaadddddff'
 console.log(stringExpansion('3d332f2a')); // === 'dddffaa'
