@@ -1,3 +1,5 @@
+To check out this homework in codepen, please follow the link https://codepen.io/shabspb/pen/rNLWwLM
+
 # Homework #4 js functions with ES6
 
 ### Deadline 27.10
