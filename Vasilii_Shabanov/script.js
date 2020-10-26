@@ -7,14 +7,7 @@ console.log(splitAndMerge("Hello World!", ",")); // should return "H,e,l,l,o W,o
 
 // 2) Write a function `convert`
 
-const convert = (hash) => {
-    const array = [];
-
-    for (let i in hash) {      
-        array.push([i, hash[i]]);
-    }
-    return array;
-};
+const convert = (hash) => Object.entries(hash); // it is amazing way to do this =)))
 
 console.log(convert({
     name: 'Jeremy',
